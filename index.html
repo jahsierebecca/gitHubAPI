@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Cozy Dev Test</title>
+	<link rel="stylesheet" href="css/app.css">
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+</head>
+<body>
+	<div class="home-header">
+		<div class="feature-header"></div>
+		<div class="site-title">
+			<div class="logo">
+				<div class="logo-anchor">
+					<div class="logo-wrapper"></div>
+					<div class="logo-anchor-copy">Cozy Issue Tracker</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<div id="spacer"></div>
+<div id="display">
+    <h2>User Info</h2>
+    <ul data-bind="foreach: issues">
+        <li>
+            <em><span data-bind="text:username"> </span></em>
+            <ul>
+	            <li>
+	            	<img data-bind="attr: { src: gravatar}">
+	</li>
+	            <li>
+	            	<span class="title">Bio:</span> 
+	            	<span data-bind="text:bio">
+	            	</span>
+	            </li>
+	            <li>
+	            	<span class="title">Followers:</span> 
+	            	<span data-bind="text:followers">
+	            	</span>
+	            </li>
+	            <li>
+	            	<span class="title">Repos: </span>
+	            	<span data-bind="text:repos"></span>
+	            </li>
+	            <li>
+	            	<span class="title">Company:</span> 
+	            	<span data-bind="text:company">
+	            	</span>
+	            </li>
+	            <li>
+	            	<span class="title">Blog: </span>
+	            	<span data-bind="text:blog"></span>
+	            </li>    
+	            <li>
+	            	<a target="blank" data-bind="attr: { href: url, title:url  }">
+    Go to Github Profile
+</a>
+	            </li>        
+	            </ul>
+	        </li>
+	    </ul>
+    
+</div>
+
+	<script type='text/javascript' src='bower_components/knockout/dist/knockout.js'></script>
+		<script src="js/app.js"></script>
+</body>
+
+</html>
