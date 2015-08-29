@@ -1,3 +1,5 @@
+/////////////GITHUB API ///////////////
+
 var url = 'https://api.github.com/users/jahsierebecca';
 // var url = 'https://api.github.com/repos/CozyCo/slack-post/issues';
 
@@ -14,6 +16,7 @@ function go() {
 		showIssues(data, status, xhr);
 		ko.applyBindings(viewModel);
 		console.log(data);
+		console.log("buttz");
 		console.log(data.data.followers);
 	});
 }
@@ -75,3 +78,4 @@ var Issue = function(issue) {
 var viewModel = {
     issues: [],
 };
+//# sourceMappingURL=main.js.map
