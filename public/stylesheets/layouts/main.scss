@@ -19,8 +19,7 @@
 
 
 .home-header {
-	height: 200px;
-	display: block;
+	// height: 200px;
 	position: relative;
 	z-index: 0;
 	text-align: center;
@@ -38,7 +37,7 @@
 		left: 0;
 		background-color: #2D302F;
 		top: 0;
-		background-image: url("../cozyLogo.png");
+		background-image: url("../images/logo.png");
 		// background-attachment: fixed;
 		background-size: contain;
 		background-position: center;
@@ -103,71 +102,85 @@
 	// 	// @include span-columns(8);
 	// 	// @include shift(2);
 	// }
-	// @include outer-container(100%);	
+	padding: 30px;
+	@include outer-container(100%);	
 	margin-top: 25px;	
-	li {
-		overflow: scroll;
-	}
+	// li {
+	// 	overflow: scroll;
+	// }
 	// @include span-columns(12);
 	margin-left: 10px;
 	width: 100%;
+	#user-info {
+		@include span-columns(4)
+	}
+
+	#user-content {
+		@include span-columns(8)
+	}
 }
+
+img {
+		height: 200px;
+		width: 200px;
+	}
 
 span.title {
 	color: #2D302F;
 }
 
-.project {
-	@include outer-container(100%);
-	// padding: 15px;
-	height: 80vh;
-	@include clearfix;
-	background: white center center fixed no-repeat;
-	background-size: cover;
-	box-sizing: border-box;
 
-	// @include media($tablet) {
-	// 	background-color: white;
-	// }
-}
-.descrip {
-	@include span-columns(12);
-	padding:  15px;
-	@include vertical-align;
-	height: 100%;
+// .project {
+// 	@include outer-container(100%);
+// 	// padding: 15px;
+// 	height: 80vh;
+// 	@include clearfix;
+// 	background: white center center fixed no-repeat;
+// 	background-size: cover;
+// 	box-sizing: border-box;
 
-		box-sizing: border-box;
-	margin-right: 0;
-	margin-left: 0;
+// 	// @include media($tablet) {
+// 	// 	background-color: white;
+// 	// }
+// }
+// .descrip {
+// 	@include span-columns(12);
+// 	padding:  15px;
+// 	@include vertical-align;
+// 	height: 100%;
 
-	 @include media($medium-screen-up) {
-	// 	// background-color: white;
-	// 	height: 100%;
-	// }
-	// @include media($tablet) {
-		background-color: white;
-		width: 50%;
-		height: 100%;
-		@include vertical-align;
-		.blank {
-			right: 0;
-		}
-	}
-	@include media($large-screen-up) {
-		 	background-color: transparent;
-	}
-}
+// 		box-sizing: border-box;
+// 	margin-right: 0;
+// 	margin-left: 0;
+
+// 	 @include media($medium-screen-up) {
+// 	// 	// background-color: white;
+// 	// 	height: 100%;
+// 	// }
+// 	// @include media($tablet) {
+// 		background-color: white;
+// 		width: 50%;
+// 		height: 100%;
+// 		@include vertical-align;
+// 		.blank {
+// 			right: 0;
+// 		}
+// 	}
+// 	@include media($large-screen-up) {
+// 		 	background-color: transparent;
+// 	}
+// }
 
 
 
-.type-2 {
-	float: right;
-	right: 0;
-	// width: 100%;
-	// .description {
-	// 	float: left;
-	// }
-}
+// .type-2 {
+// 	float: right;
+// 	right: 0;
+// 	// width: 100%;
+// 	// .description {
+// 	// 	float: left;
+// 	// }
+// }
 
 // .type-2 > .descrip {
 //   @include direction-context(right-to-left) {
@@ -177,17 +190,17 @@ span.title {
 //   }
 // }
 
-.description {
-	// margin: auto 10%;
-	padding: 4em;
-	// width: 80%;
-		overflow: scroll;
-	// height: 80%;
-		box-sizing: border-box;
-		p {
-			vertical-align: middle;
-		}
-}
+// .description {
+// 	// margin: auto 10%;
+// 	padding: 4em;
+// 	// width: 80%;
+// 		overflow: scroll;
+// 	// height: 80%;
+// 		box-sizing: border-box;
+// 		p {
+// 			vertical-align: middle;
+// 		}
+// }
 
 .butt {
 	color: red;

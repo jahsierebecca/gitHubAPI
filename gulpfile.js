@@ -55,7 +55,7 @@ gulp.task('watchFiles', function(){
 	gulp.watch('./public/javascripts/*.js', ['minifyScripts']);
 });
 
-gulp.task('serve', ['watchFiles']);
+gulp.task('serve', ['watchFiles', 'start']);
 
 // gulp.task('build', ['minifyScripts', 'compileSass']);
 

@@ -16,7 +16,16 @@ block content
 	#spacer
 	#display
 		h2 Github User Information
-		ul(data-bind="foreach: issues")
-			li
-				span(data-bind="text:username")
-				h3 hiiiiiiii
+		div(data-bind="foreach: issues")
+			#user-info
+				p#username(data-bind="text:username")
+				img#gravatar(data-bind="attr: {src: gravatar}")
+				br
+				a#user-link(target="blank" data-bind="attr: { href: url}") Github Profile
+			#user-content
+				p#bio(data-bind="text:bio")
+				p#followers(data-bind="text:followers")
+				p#repos(data-bind="text:repos")
+				p#company(data-bind="text:company")
+				p#blog(data-bind="text:blog")			
+

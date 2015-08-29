@@ -396,8 +396,6 @@ table {
   z-index: 50; }
 
 .home-header {
-  height: 200px;
-  display: block;
   position: relative;
   z-index: 0;
   text-align: center;
@@ -414,7 +412,7 @@ table {
     left: 0;
     background-color: #2D302F;
     top: 0;
-    background-image: url("../cozyLogo.png");
+    background-image: url("../images/logo.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat; }
@@ -450,73 +448,38 @@ table {
   height: 40px; }
 
 #display {
-  margin-top: 25px; }
-  #display li {
-    overflow: scroll; }
-
-span.title {
-  color: #2D302F; }
-
-.project {
+  padding: 30px;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  height: 80vh;
-  background: white center center fixed no-repeat;
-  background-size: cover;
-  box-sizing: border-box; }
-  .project::after {
+  margin-top: 25px;
+  margin-left: 10px;
+  width: 100%; }
+  #display::after {
     clear: both;
     content: "";
     display: table; }
-  .project::after {
-    clear: both;
-    content: "";
-    display: table; }
+  #display #user-info {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    #display #user-info:last-child {
+      margin-right: 0; }
+  #display #user-content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    #display #user-content:last-child {
+      margin-right: 0; }
 
-.descrip {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  padding: 15px;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  height: 100%;
-  box-sizing: border-box;
-  margin-right: 0;
-  margin-left: 0; }
-  .descrip:last-child {
-    margin-right: 0; }
-  @media screen and (min-width: 40em) {
-    .descrip {
-      background-color: white;
-      width: 50%;
-      height: 100%;
-      position: relative;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%); }
-      .descrip .blank {
-        right: 0; } }
-  @media screen and (min-width: 53.75em) {
-    .descrip {
-      background-color: transparent; } }
+img {
+  height: 200px;
+  width: 200px; }
 
-.type-2 {
-  float: right;
-  right: 0; }
-
-.description {
-  padding: 4em;
-  overflow: scroll;
-  box-sizing: border-box; }
-  .description p {
-    vertical-align: middle; }
+span.title {
+  color: #2D302F; }
 
 .butt {
   color: red;
